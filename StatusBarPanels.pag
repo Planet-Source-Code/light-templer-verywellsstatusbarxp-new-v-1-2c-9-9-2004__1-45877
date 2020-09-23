@@ -1,0 +1,1112 @@
+VERSION 5.00
+Begin VB.PropertyPage StatusBarPanels 
+   Caption         =   "Panels"
+   ClientHeight    =   4995
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6900
+   BeginProperty Font 
+      Name            =   "Tahoma"
+      Size            =   8.25
+      Charset         =   0
+      Weight          =   400
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   333
+   ScaleMode       =   3  'Pixel
+   ScaleWidth      =   460
+   Begin VB.ComboBox cbCopyFrom 
+      Height          =   315
+      Left            =   5070
+      Style           =   2  'Dropdown List
+      TabIndex        =   3
+      ToolTipText     =   " Copy all properies from an other panel. "
+      Top             =   150
+      Width           =   1335
+   End
+   Begin VB.Frame frmMain 
+      Caption         =   "  Panel   Main properties  "
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   2670
+      Left            =   75
+      TabIndex        =   29
+      Top             =   570
+      Width           =   4725
+      Begin VB.CheckBox chkBold 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Bold"
+         Height          =   255
+         Left            =   2040
+         TabIndex        =   43
+         ToolTipText     =   " Caption in 'Bold' type style. "
+         Top             =   2310
+         Width           =   600
+      End
+      Begin VB.TextBox txt 
+         Height          =   285
+         Index           =   4
+         Left            =   3600
+         TabIndex        =   8
+         ToolTipText     =   "Minimal width for 'spring type' panels"
+         Top             =   1500
+         Width           =   1000
+      End
+      Begin VB.CheckBox chkVisible 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Visible "
+         Height          =   255
+         Left            =   1155
+         TabIndex        =   11
+         ToolTipText     =   " Draw this panel (or not)."
+         Top             =   2310
+         Value           =   1  'Checked
+         Width           =   735
+      End
+      Begin VB.TextBox txt 
+         Height          =   285
+         Index           =   3
+         Left            =   3105
+         TabIndex        =   12
+         Top             =   2295
+         Width           =   1500
+      End
+      Begin VB.TextBox txt 
+         Height          =   285
+         Index           =   0
+         Left            =   1350
+         TabIndex        =   5
+         Top             =   705
+         Width           =   3255
+      End
+      Begin VB.TextBox txt 
+         Height          =   285
+         Index           =   1
+         Left            =   1350
+         TabIndex        =   7
+         Top             =   1500
+         Width           =   1000
+      End
+      Begin VB.CheckBox chkEnabled 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Enabled "
+         Height          =   255
+         Left            =   135
+         TabIndex        =   10
+         ToolTipText     =   " Enable/Disable Click and DoubleClick events of this panel. "
+         Top             =   2310
+         Value           =   1  'Checked
+         Width           =   870
+      End
+      Begin VB.TextBox txt 
+         Height          =   285
+         Index           =   2
+         Left            =   1350
+         TabIndex        =   9
+         Top             =   1890
+         Width           =   3255
+      End
+      Begin VB.ComboBox cbPanelType 
+         Height          =   315
+         ItemData        =   "StatusBarPanels.pgx":0000
+         Left            =   1350
+         List            =   "StatusBarPanels.pgx":001C
+         Style           =   2  'Dropdown List
+         TabIndex        =   4
+         Top             =   300
+         Width           =   3255
+      End
+      Begin VB.ComboBox cbTextAlignment 
+         Height          =   315
+         ItemData        =   "StatusBarPanels.pgx":0075
+         Left            =   1350
+         List            =   "StatusBarPanels.pgx":0082
+         Style           =   2  'Dropdown List
+         TabIndex        =   6
+         Top             =   1095
+         Width           =   3255
+      End
+      Begin VB.Label lbl 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Min. Width"
+         Height          =   240
+         Index           =   7
+         Left            =   2760
+         TabIndex        =   42
+         Top             =   1545
+         Width           =   810
+      End
+      Begin VB.Label lbl 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Tag"
+         Height          =   255
+         Index           =   6
+         Left            =   2790
+         TabIndex        =   41
+         Top             =   2325
+         Width           =   315
+      End
+      Begin VB.Label lbl 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Panel Text"
+         Height          =   255
+         Index           =   0
+         Left            =   150
+         TabIndex        =   34
+         Top             =   705
+         Width           =   975
+      End
+      Begin VB.Label lbl 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Panel Width"
+         Height          =   255
+         Index           =   1
+         Left            =   150
+         TabIndex        =   33
+         Top             =   1545
+         Width           =   975
+      End
+      Begin VB.Label lbl 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Tooltip Text"
+         Height          =   255
+         Index           =   2
+         Left            =   150
+         TabIndex        =   32
+         Top             =   1920
+         Width           =   975
+      End
+      Begin VB.Label lbl 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Panel Type"
+         Height          =   255
+         Index           =   4
+         Left            =   150
+         TabIndex        =   31
+         Top             =   330
+         Width           =   975
+      End
+      Begin VB.Label lbl 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Text-Alignment"
+         Height          =   255
+         Index           =   5
+         Left            =   150
+         TabIndex        =   30
+         Top             =   1155
+         Width           =   1110
+      End
+   End
+   Begin VB.Frame Frame 
+      Caption         =   "  Panel   Background and Edges  "
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   1470
+      Index           =   0
+      Left            =   75
+      TabIndex        =   27
+      Top             =   3345
+      Width           =   6600
+      Begin VB.ComboBox cbSpacing 
+         Height          =   315
+         ItemData        =   "StatusBarPanels.pgx":009B
+         Left            =   825
+         List            =   "StatusBarPanels.pgx":009D
+         Style           =   2  'Dropdown List
+         TabIndex        =   20
+         Top             =   960
+         Width           =   615
+      End
+      Begin VB.ComboBox cbOuterEge 
+         Height          =   315
+         ItemData        =   "StatusBarPanels.pgx":009F
+         Left            =   2565
+         List            =   "StatusBarPanels.pgx":00A1
+         Style           =   2  'Dropdown List
+         TabIndex        =   21
+         Top             =   960
+         Width           =   1455
+      End
+      Begin VB.Frame Frame 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   120
+         Index           =   1
+         Left            =   30
+         TabIndex        =   36
+         Top             =   675
+         Width           =   6540
+      End
+      Begin VB.ComboBox cbInnerEdge 
+         Height          =   315
+         ItemData        =   "StatusBarPanels.pgx":00A3
+         Left            =   5040
+         List            =   "StatusBarPanels.pgx":00A5
+         Style           =   2  'Dropdown List
+         TabIndex        =   22
+         Top             =   960
+         Width           =   1455
+      End
+      Begin VB.ComboBox cbGradient 
+         Height          =   315
+         ItemData        =   "StatusBarPanels.pgx":00A7
+         Left            =   4680
+         List            =   "StatusBarPanels.pgx":00A9
+         Style           =   2  'Dropdown List
+         TabIndex        =   19
+         Top             =   300
+         Width           =   1815
+      End
+      Begin VB.Label lblDesc 
+         Caption         =   "Outer Edge"
+         Height          =   240
+         Index           =   4
+         Left            =   1665
+         TabIndex        =   39
+         Top             =   1020
+         Width           =   825
+      End
+      Begin VB.Label lblDesc 
+         Caption         =   "Inner Edge"
+         Height          =   240
+         Index           =   3
+         Left            =   4200
+         TabIndex        =   38
+         Top             =   1020
+         Width           =   825
+      End
+      Begin VB.Label lblDesc 
+         Caption         =   "Spacing"
+         Height          =   285
+         Index           =   2
+         Left            =   195
+         TabIndex        =   37
+         Top             =   1020
+         Width           =   555
+      End
+      Begin VB.Label lblDesc 
+         Caption         =   "Background Gradient"
+         Height          =   285
+         Index           =   1
+         Left            =   3015
+         TabIndex        =   35
+         Top             =   345
+         Width           =   1560
+      End
+      Begin VB.Label lblDesc 
+         Caption         =   "Background Color"
+         Height          =   285
+         Index           =   0
+         Left            =   180
+         TabIndex        =   28
+         Top             =   345
+         Width           =   1260
+      End
+      Begin VB.Label lblPBckgColor 
+         BackColor       =   &H00FF8080&
+         BorderStyle     =   1  'Fixed Single
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         Left            =   1635
+         TabIndex        =   18
+         Top             =   300
+         Width           =   900
+      End
+   End
+   Begin VB.CommandButton cmdDelete 
+      Caption         =   "Delete panel"
+      Height          =   300
+      Left            =   3645
+      TabIndex        =   2
+      ToolTipText     =   "Delete current panel"
+      Top             =   150
+      Width           =   1140
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "  Panel   Picture  "
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   2655
+      Left            =   4920
+      TabIndex        =   24
+      Top             =   570
+      Width           =   1755
+      Begin VB.OptionButton optIconSize 
+         Caption         =   " Large Icon"
+         Height          =   210
+         Index           =   1
+         Left            =   165
+         TabIndex        =   16
+         ToolTipText     =   "Only used when loading icons !"
+         Top             =   1560
+         Width           =   1110
+      End
+      Begin VB.OptionButton optIconSize 
+         Caption         =   " Small Icon"
+         Height          =   210
+         Index           =   0
+         Left            =   165
+         TabIndex        =   15
+         ToolTipText     =   "Only used when loading icons !"
+         Top             =   1305
+         Value           =   -1  'True
+         Width           =   1110
+      End
+      Begin VB.ComboBox cbPPalignment 
+         Height          =   315
+         ItemData        =   "StatusBarPanels.pgx":00AB
+         Left            =   135
+         List            =   "StatusBarPanels.pgx":00B8
+         Style           =   2  'Dropdown List
+         TabIndex        =   17
+         Top             =   1875
+         Width           =   1485
+      End
+      Begin VB.CommandButton cmdDelPanelsPicture 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   435
+         Left            =   1170
+         Picture         =   "StatusBarPanels.pgx":00E6
+         Style           =   1  'Graphical
+         TabIndex        =   14
+         Top             =   795
+         Width           =   435
+      End
+      Begin VB.PictureBox picPanel 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   915
+         Left            =   135
+         ScaleHeight     =   57
+         ScaleMode       =   3  'Pixel
+         ScaleWidth      =   61
+         TabIndex        =   25
+         TabStop         =   0   'False
+         Top             =   300
+         Width           =   975
+      End
+      Begin VB.CommandButton cmdOpenDlg 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   435
+         Left            =   1170
+         Picture         =   "StatusBarPanels.pgx":0230
+         Style           =   1  'Graphical
+         TabIndex        =   13
+         Top             =   300
+         Width           =   435
+      End
+      Begin VB.Label Label 
+         Caption         =   "Set [MaskColor] before loading icons !"
+         Height          =   420
+         Left            =   135
+         TabIndex        =   40
+         Top             =   2205
+         Width           =   1560
+      End
+   End
+   Begin VB.HScrollBar hsb 
+      Height          =   300
+      Left            =   1740
+      Max             =   0
+      TabIndex        =   0
+      TabStop         =   0   'False
+      Top             =   150
+      Width           =   435
+   End
+   Begin VB.CommandButton cmdInsertPanel 
+      Caption         =   "Insert panel"
+      Height          =   300
+      Left            =   2355
+      TabIndex        =   1
+      ToolTipText     =   "Insert after current panel"
+      Top             =   150
+      Width           =   1140
+   End
+   Begin VB.Label lblIndex 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H00808080&
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "0 / 0"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00E0E0E0&
+      Height          =   285
+      Left            =   885
+      TabIndex        =   26
+      Top             =   165
+      Width           =   780
+   End
+   Begin VB.Label lbl 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Index"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   195
+      Index           =   3
+      Left            =   255
+      TabIndex        =   23
+      Top             =   210
+      Width           =   555
+   End
+   Begin VB.Shape Shape 
+      BackColor       =   &H00E0E0E0&
+      BackStyle       =   1  'Opaque
+      Height          =   465
+      Left            =   75
+      Top             =   75
+      Width           =   6585
+   End
+End
+Attribute VB_Name = "StatusBarPanels"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+
+'
+'   StatusBarPanels.pag
+'
+
+
+Option Explicit
+
+Const sFilter As String = "All Picture Files (BMP, GIF, ICO, JPG)|*.bmp;*.ico;*.gif;*.jpg|All Files (*.*)|*.*"
+
+Private Declare Function ExtractIconEx Lib "shell32.dll" Alias "ExtractIconExA" _
+        (ByVal lpszFile As String, _
+         ByVal nIconIndex As Long, _
+         phiconLarge As Long, _
+         phiconSmall As Long, _
+         ByVal nIcons As Long) As Long
+
+Private Declare Function DestroyIcon Lib "user32" _
+        (ByVal hIcon As Long) As Long
+
+Private Declare Function OleCreatePictureIndirect Lib "olepro32.dll" _
+        (lpPictDesc As PICTDESC, _
+         riid As Any, _
+         ByVal fOwn As Long, _
+         ipic As IPicture) As Long
+
+Private Type PICTDESC
+    cbSize      As Long
+    pictType    As Long
+    hIcon       As Long
+    hPal        As Long
+End Type
+
+
+Private Const CB_SETCURSEL = &H14E
+
+Private sb          As ucVeryWellsStatusBarXP   ' Most important ref to uc !
+Private iLastPanel  As Long
+'
+'
+'
+
+Private Function IconToPicture(ByVal hIcon As Long) As Picture
+    ' Thx to www.VB2TheMax.Com for this nice little gem !
+    
+    Dim pic             As PICTDESC
+    Dim guid(0 To 3)    As Long
+    
+    ' initialize the PictDesc structure
+    pic.cbSize = Len(pic)
+    pic.pictType = vbPicTypeIcon
+    pic.hIcon = hIcon
+    ' this is the IPicture GUID {7BF80980-BF32-101A-8BBB-00AA00300CAB}
+    ' we use an array of Long to initialize it faster
+    guid(0) = &H7BF80980
+    guid(1) = &H101ABF32
+    guid(2) = &HAA00BB8B
+    guid(3) = &HAB0C3000
+    ' create the picture,
+    ' return an object reference right into the function result
+    OleCreatePictureIndirect pic, guid(0), True, IconToPicture
+    
+End Function
+
+
+Private Sub cbCopyFrom_Click()
+    ' Copy all properties from an other panel
+
+    Dim lSrcPanel   As Long
+
+    lSrcPanel = cbCopyFrom.ListIndex
+    If lSrcPanel < 1 Or lSrcPanel = hsb.Value Then
+        
+        Exit Sub
+    End If
+
+    ShowProps lSrcPanel
+    SendMessage cbCopyFrom.Hwnd, CB_SETCURSEL, 0&, ByVal 0&     ' Select first item without Click event
+    
+End Sub
+
+Private Sub cbPanelType_Click()
+    
+    Select Case cbPanelType.ListIndex
+
+        Case [PT Text fixed size]
+    
+        Case [PT Text spring size]
+    
+        Case [PT Time]
+                txt(0).Text = Format(Time, "hh:nn:ss")
+                                
+        Case [PT Date]
+                txt(0).Text = Format(Date, "d.m.yyyy")
+              
+        Case [PT CapsLock]
+                txt(0).Text = "CAPS"
+        
+        Case [PT NumLock]
+                txt(0).Text = "NUM"
+            
+        Case [PT Scroll]
+                txt(0).Text = "SCROLL"
+        
+    End Select
+    Changed = True
+    
+End Sub
+
+
+Private Sub cmdInsertPanel_Click()
+    
+    Dim lNumberOfPanels As Long
+    
+    If Changed = True Then
+        PropertyPage_ApplyChanges
+    End If
+    With sb
+        lNumberOfPanels = .InsertPanel(hsb.Value)
+        hsb.Min = 1
+        hsb.Max = lNumberOfPanels
+    End With
+    Changed = True
+    iLastPanel = lNumberOfPanels
+    UpdateCopyFromCB
+    picPanel.Picture = Nothing
+    
+End Sub
+
+
+Private Sub cmdDelPanelsPicture_Click()
+        
+    picPanel.Picture = Nothing
+    Changed = True
+    
+End Sub
+
+
+Private Sub cmdDelete_Click()
+    
+    With hsb
+        sb.DeletePanel .Value
+        .Max = sb.NumberOfPanels
+        If .Max = 0 Then
+            .Min = 0
+            .Value = 0
+        End If
+    End With
+    UpdateCopyFromCB
+    
+End Sub
+
+
+Private Sub cmdOpenDlg_Click()
+    
+    Dim sFile           As String
+    Dim lResult         As Long
+    Dim hSmallIcon      As Long
+    Dim hLargeIcon      As Long
+    Dim hUsedIcon       As Long
+    Dim sTMPpathFName   As String
+    
+    
+    On Error GoTo error_handler
+
+
+    sFile = vbNullString
+    sFile = OpenCommonDialog("Load Picture", sFilter) + Chr$(0)
+    sFile = Left$(sFile, InStr(1, sFile, Chr$(0)) - 1)
+    If sFile <> "" Then
+    
+        If UCase$(Right$(sFile, 4)) = ".ICO" Then
+    
+            ' Get total number of icons this file contains
+            lResult = ExtractIconEx(sFile, -1&, ByVal 0&, ByVal 0&, 1)
+            If lResult > 0 Then
+                                
+            lResult = ExtractIconEx(sFile, 0, hLargeIcon, hSmallIcon, 1)
+                If lResult > 0 Then
+                    If optIconSize(0).Value = True Then
+                        DestroyIcon hLargeIcon
+                        hUsedIcon = hSmallIcon
+                    Else
+                        DestroyIcon hSmallIcon
+                        hUsedIcon = hLargeIcon
+                    End If
+                    
+                    picPanel.BackColor = sb.MaskColor
+                    Set picPanel.Picture = IconToPicture(hUsedIcon)
+                    picPanel.Refresh
+                    DestroyIcon hUsedIcon
+                    sTMPpathFName = App.Path + "\~ConvIcon2Bmp.tmp"
+                    SavePicture picPanel.Image, sTMPpathFName
+                    
+                    Set picPanel.Picture = LoadPicture(sTMPpathFName)
+                    picPanel.Refresh
+                    Kill sTMPpathFName
+                End If
+            End If
+        Else
+            Set picPanel.Picture = LoadPicture(sFile)
+        End If
+        
+    End If
+
+    On Error GoTo 0
+
+    Exit Sub
+
+
+error_handler:
+
+    MsgBox "Error loading a picture :" + vbCrLf + vbCrLf + _
+            "[" + Err.Description + "] in 'cmdOpenDlg_Click()', Modul 'StatusBarPanels'", _
+            vbExclamation, " Error readin picture/icon"
+
+End Sub
+
+
+Private Sub hsb_Change()
+    
+    Static flgDontRecurse As Boolean
+    
+    Dim i As Long
+    
+    If flgDontRecurse = True Then
+    
+        Exit Sub
+    End If
+    flgDontRecurse = True
+    
+    i = hsb.Value
+    If i <> iLastPanel And Changed = True Then
+        PropertyPage_ApplyChanges
+    End If
+
+    iLastPanel = i
+    If sb.NumberOfPanels > 0 Then
+        ShowProps i
+    End If
+    
+    lblIndex.Caption = hsb.Value & " / " & hsb.Max
+    
+    UpdateCopyFromCB
+    
+    Changed = False
+    flgDontRecurse = False
+    
+End Sub
+
+Private Sub ShowProps(lIndexPanel As Long)
+    ' Load panels properties onto screen
+    
+    With sb
+        txt(0).Text = .PanelCaption(lIndexPanel)
+        txt(1).Text = .PanelWidth(lIndexPanel)
+        txt(2).Text = .PanelToolTipText(lIndexPanel)
+        txt(3).Text = .PanelTag(lIndexPanel)
+        txt(4).Text = .PanelMinWidth(lIndexPanel)
+        
+        cbPanelType.ListIndex = .PanelType(lIndexPanel)
+        cbTextAlignment.ListIndex = .TextAlignment(lIndexPanel)
+        chkEnabled.Value = IIf(.PanelEnabled(lIndexPanel) = True, 1, 0)
+        chkVisible.Value = IIf(.PanelVisible(lIndexPanel) = True, 1, 0)
+        chkBold.Value = IIf(.PanelTextBold(lIndexPanel) = True, 1, 0)
+        Set picPanel.Picture = .PanelPicture(lIndexPanel)
+        cmdDelete.Enabled = IIf(lIndexPanel = 0, False, True)
+        cbPPalignment.ListIndex = .PanelPicAlignment(lIndexPanel)
+        
+        lblPBckgColor.BackColor = .PanelBckgColor(lIndexPanel)
+        cbGradient.ListIndex = .PanelGradient(lIndexPanel) - 1
+        cbSpacing.ListIndex = .PanelEdgeSpacing(lIndexPanel) - 1
+        SetListIndexByItemData cbOuterEge, .PanelEdgeOuter(lIndexPanel)
+        SetListIndexByItemData cbInnerEdge, .PanelEdgeInner(lIndexPanel)
+        
+    End With
+        
+    Select Case sb.PanelType(lIndexPanel)
+
+        Case [PT Text fixed size]
+
+        Case [PT Text spring size]
+
+        Case [PT Time]
+                txt(0).Text = Format(Time, "hh:nn:ss")
+                                
+        Case [PT Date]
+                txt(0).Text = Format(Date, "d.m.yyyy")
+                  
+        Case [PT CapsLock]
+                txt(0).Text = "CAPS"
+        
+        Case [PT NumLock]
+                txt(0).Text = "NUM"
+        
+        Case [PT Scroll]
+                txt(0).Text = "SCROLL"
+        
+    End Select
+
+End Sub
+
+Private Sub UpdateCopyFromCB()
+    ' Update the list of control 'cbCopyFrom' to match current number of panels
+
+    Dim i As Long
+
+    With cbCopyFrom
+        .Clear
+        .AddItem "Copy from ..."
+        For i = 1 To hsb.Max
+            If i <> hsb.Value Then
+                .AddItem " Panel " & i
+            End If
+        Next i
+        SendMessage .Hwnd, CB_SETCURSEL, 0&, ByVal 0&     ' Select first item without Click event
+    End With
+    PropertyPage.Refresh    ' Got strange effect without this:  Border of combo will not be drawn ... ;(
+
+End Sub
+
+Private Sub SetListIndexByItemData(TheCB As ComboBox, lItemData As Long)
+
+    Dim i As Long
+    
+    With TheCB
+        For i = 0 To .ListCount - 1
+            If .ItemData(i) = lItemData Then
+                .ListIndex = i
+                
+                Exit Sub
+            End If
+        Next i
+    End With
+    
+End Sub
+
+
+Private Sub lblPBckgColor_Click()
+    
+    lblPBckgColor.BackColor = GetColorsByStdDlg(lblPBckgColor.BackColor, PropertyPage.Hwnd)
+    Changed = True
+    
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+    
+    Dim i As Long
+    
+
+    i = iLastPanel
+    If i < 1 Then
+    
+        Exit Sub
+    End If
+    If txt(1).Text = "" Then
+        txt(1).Text = "100"
+    End If
+    
+    With sb
+        .PanelEnabled(i) = IIf(chkEnabled = 1, True, False)
+        .PanelVisible(i) = IIf(chkVisible = 1, True, False)
+        .PanelTextBold(i) = IIf(chkBold = 1, True, False)
+        
+        .PanelCaption(i) = txt(0).Text
+        .PanelWidth(i) = txt(1).Text
+        .PanelToolTipText(i) = txt(2).Text
+        .PanelTag(i) = txt(3).Text
+        .PanelMinWidth(i) = txt(4).Text
+        
+        .PanelType(i) = cbPanelType.ListIndex
+        .TextAlignment(i) = cbTextAlignment.ListIndex
+        
+        Set .PanelPicture(i) = picPanel.Picture
+        .PanelPicAlignment(i) = cbPPalignment.ListIndex
+        
+        .PanelBckgColor(i) = lblPBckgColor.BackColor
+        .PanelGradient(i) = cbGradient.ListIndex + 1
+        .PanelEdgeSpacing(i) = cbSpacing.ListIndex + 1
+        .PanelEdgeOuter(i) = cbOuterEge.ItemData(cbOuterEge.ListIndex)
+        .PanelEdgeInner(i) = cbInnerEdge.ItemData(cbInnerEdge.ListIndex)
+        
+        Select Case .PanelType(i)
+
+        Case [PT Text fixed size]
+
+        Case [PT Text spring size]
+
+        Case [PT Time]
+                .PanelCaption(i) = Format(Time, "hh:nn:ss")
+                                
+        Case [PT Date]
+                .PanelCaption(i) = Format(Date, "d.m.yyyy")
+                                
+        Case [PT CapsLock]
+                .PanelCaption(i) = "CAPS"
+        
+        Case [PT NumLock]
+                .PanelCaption(i) = "NUM"
+            
+        Case [PT Scroll]
+                .PanelCaption(i) = "SCROLL"
+        
+        End Select
+        
+        .RefreshAll
+        
+    End With
+    
+End Sub
+
+
+Private Sub PropertyPage_Initialize()
+
+    Dim i As Long
+
+    ' Combo presets
+    With cbGradient
+        .AddItem "Transparent"
+        .AddItem "Opaque"
+        .AddItem "Top Bottom"
+        .AddItem "Top 1/3 Bottom"
+        .AddItem "Top 1/2 Bottom"
+        .AddItem "Top 2/3 Bottom"
+        .AddItem "Bottom Top"
+    End With
+
+    With cbOuterEge
+        .AddItem "None"
+        .ItemData(0) = 0
+    
+        .AddItem "Border"
+        .ItemData(1) = 9
+        
+        .AddItem "Etch"
+        .ItemData(2) = 6
+    
+        .AddItem "RaiseLight"
+        .ItemData(3) = 4
+    
+        .AddItem "RaiseHeavy"
+        .ItemData(4) = 5
+    
+        .AddItem "SunkenLight"
+        .ItemData(5) = 2
+    
+        .AddItem "SunkenHeavy"
+        .ItemData(6) = 10
+    End With
+
+    With cbInnerEdge
+        .AddItem "None"
+        .ItemData(0) = 0
+    
+        .AddItem "Border"
+        .ItemData(1) = 9
+        
+        .AddItem "Etch"
+        .ItemData(2) = 6
+    
+        .AddItem "RaiseLight"
+        .ItemData(3) = 4
+    
+        .AddItem "RaiseHeavy"
+        .ItemData(4) = 5
+    
+        .AddItem "SunkenLight"
+        .ItemData(5) = 2
+    
+        .AddItem "SunkenHeavy"
+        .ItemData(6) = 10
+    End With
+    
+    With cbSpacing
+        For i = 1 To 7              ' inc, if you want to ;)
+            .AddItem i
+        Next i
+    End With
+    
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+    
+    Set sb = SelectedControls(0)
+    iLastPanel = 0
+    lblIndex.Caption = "0 / 0"
+    If sb.NumberOfPanels > 0 Then
+        hsb.Min = 1
+        hsb.Max = sb.NumberOfPanels
+        lblIndex.Caption = "1 / " & hsb.Max
+        iLastPanel = 1
+        hsb_Change
+    End If
+    UpdateCopyFromCB
+    
+End Sub
+
+Private Sub txt_Change(Index As Integer)
+    
+    Changed = True
+    
+End Sub
+
+Private Sub cbGradient_Click()
+    
+    Changed = True
+    
+End Sub
+
+Private Sub cbInnerEdge_Click()
+
+    Changed = True
+
+End Sub
+
+
+Private Sub cbOuterEge_Click()
+
+    Changed = True
+
+End Sub
+
+
+Private Sub cbPPalignment_Click()
+    
+    Changed = True
+    
+End Sub
+
+Private Sub cbSpacing_Click()
+    
+    Changed = True
+    
+End Sub
+
+Private Sub cbTextAlignment_Click()
+    
+    Changed = True
+    
+End Sub
+
+Private Sub chkEnabled_Click()
+    
+    Changed = True
+
+End Sub
+
+Private Sub chkVisible_Click()
+
+    Changed = True
+
+End Sub
+
+Private Sub chkBold_Click()
+
+    Changed = True
+
+End Sub
+
+
+Private Sub picPanel_Change()
+
+    Changed = True
+    
+End Sub
+
+
+' #*#

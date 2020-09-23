@@ -1,0 +1,72 @@
+
+ How to integrate controls to VeryWellsStatusBarXp ?
+=====================================================
+
+
+The statusbar works as a container control (like a picturebox).
+So just put on it what you want to! A progressbar for example
+would be fine ... 
+
+Now you can go three ways:
+
+	1) Control them by your own code.
+	   Ok. Do it. Set size and position to your needs.
+
+
+	2) Control them using the statusbars events. There
+	   are four events you can use for:
+
+			a) TimerBeforeRedraw()
+			b) TimerAfterRedraw()
+			c) BeforeRedraw()
+			d) AfterRedraw()
+
+ 	   The timer events (a+b) will raised before/after
+	   the redrawing is done. Redrawing is requested by
+	   timer interval.
+
+	   The others (c+d) are raised every time the redrawing
+	   is requested (by timer and all other sources).
+
+	   In this events you can easily reposition your controls
+ 	   by your own code and do all other changes you want to.
+
+
+	3) Controling done by the statusbar. This one is nice,
+	   cover most of needs and requires only 13 chars in the
+	   tag property of your integrated control, e.g.:
+
+			### 04 0050 +
+
+	   We need EXACTLY this format. 13 characters!
+	   This example means: The control is put on panel number
+	   four, 50 twips gap to the left border and yes, if this
+	   panel has the 'spring panel' type (size changes to forms
+	   size) the control automaticly changes its size too.
+	   One more:
+
+			### 01 0000 -
+
+	   Means: Set control to left border of panel number one,
+	  size don't changes during resizing the form.
+
+	  Have a look to the tag property of the buttons and the
+	  listbox I used on the demo form.
+
+
+Sorry for wasting the tag property for this, but it seems to be the
+easiest way to have control by standard user interface.
+Other ideas welcome!
+
+
+Light Templer
+
+
+#*#
+
+
+
+
+
+
+	  
