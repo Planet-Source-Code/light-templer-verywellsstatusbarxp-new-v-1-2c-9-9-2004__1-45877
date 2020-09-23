@@ -1,0 +1,10 @@
+
+23.6.2003 V. 1.2a
+
+	Some small bug fixes (Bold Text property, empty defaults, ...)
+	Standard Dialog LOAD shortened.
+
+ 9.6.2004 V. 1.2c
+	Fixed the ToolTipText property. (New name is 'PanelToolTipText')
+
+Light Templer

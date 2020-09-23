@@ -1,0 +1,80 @@
+
+********************************************
+
+Original Name :    xpWellsStatusBar
+Created       :    01/02/2003
+Author        :    Richard Wells
+
+New name      :    VeryWellsStatusBarXP 1.2a
+In            :    05/2003
+Redesign by   :    Light Templer
+
+Some adds     :    MIKE-S
+
+
+Enjoy this FreeWare and feel free to contact
+me on GMX:    schwepps_bitterlemon@gmx.de
+for any comments or suggestions.
+
+LT
+
+********************************************
+
+Acknowledgements by Richard Wells:
+
+Ariad Software.
+For letting me look through there ToolBar
+code to see how they use Property Pages.
+
+Manjula Dharmawardhana for his simple
+Common Dialog without the .OCX sample.
+          (www.manjulapra.com)
+
+Special Thanks:
+Steve McMahon ( The Man ) at
+          (www.vbaccelerator.com)
+for showing us mere mortals how to make
+quality ActiveX controls. Without his
+generosity and skills, this control would
+not have happened.
+
+********************************************
+
+Acknowledgements by Light Templer:
+
+First of all: Sorry to Richard Wells!
+I took his code and did some violance to
+it ;). It seemed on Planet Source Code that
+no more further development will take place
+to this fine control and I missed a few
+features ;) ...
+
+Richard send me an email and told me he wants
+to see my solution to the icon problem and the
+new features. So I think its ok ;) and he will
+forgive me.
+
+
+Special thx to Carlos J. Quintero
+      (www.mztools.com)
+for his MZ Tools, the best allround addin for
+VB you can get! (And, btw, it's freeware!)
+
+
+Thx & regards to Keith "LaVolpe" Fox for his?
+nice API timer / window prop reference trick.
+(Check out 'LaVolpe Button' on Planet Source
+Code! Fine stuff - best VB button you can get
+with source code! Maybe best overall!)
+
+********************************************
+
+Special thx to MIKE-S from PSC! :
+
+He added the Office XP look, the 'AutoSize
+to contents' feature and released the control
+as xpWellsStatusbarXP 2 on 25/5/2003 on PSC.
+
+I integrated some parts of his code and hope
+he can forgive me, too.
+********************************************
